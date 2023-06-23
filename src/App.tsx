@@ -5,8 +5,9 @@ import { UserList } from './users';
 import { authProvider } from './authProvider';
 
 export const App = () => (
+  
     <Admin authProvider={authProvider} dataProvider={dataProvider}>
      <Resource name="users" list={UserList} />
-     <Resource name="albums" list={ListGuesser} />
+     {/* <Resource name="albums" list={ListGuesser} /> */}
     </Admin>
   );
